@@ -2,7 +2,7 @@
 name = "django-api-response"
 version = "0.1.0"
 description = ""
-authors = ["dicardo <you@example.com>"]
+authors = ["winspain <penndicardo@outlook.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
