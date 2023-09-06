@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "django-api-response"
+name = "django_useful_utils"
 version = "0.1.0"
 description = ""
 authors = ["winspain <penndicardo@outlook.com>"]
