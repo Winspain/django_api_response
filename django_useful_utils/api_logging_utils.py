@@ -1,12 +1,13 @@
 # -*- coding:utf-8 -*-　　
 import json
+import logging
 import time
 
 from django.conf import settings
 from django.utils.deprecation import MiddlewareMixin
 
 
-class ApiResponseUtils():
+class ApiLoggingUtils():
     def __init__(self, get_response):
         self.get_response = get_response
 
@@ -25,9 +26,4 @@ class ApiResponseUtils():
             response_data = str(response.content, encoding='utf-8') if response.status_code != 500 else 'Please check error log'
         except Exception as e:
             response_data = e
-
-    def process_request(self, request):
-        pass
-
-    def process_response(self, request, response):
-        return response
+        logging.info(f'{execute_time}{response_data}')
