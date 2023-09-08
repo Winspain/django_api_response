@@ -7,7 +7,7 @@ from django.conf import settings
 from django.utils.deprecation import MiddlewareMixin
 
 
-class ApiLoggingUtils():
+class ApiLoggingMiddleware:
     def __init__(self, get_response):
         self.get_response = get_response
 
