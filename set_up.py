@@ -1,10 +1,8 @@
-from setuptools import setup, find_packages
-
-from django_useful_utils.api_logging_middleware import VERSION
+from setuptools import setup, find_packages, __version__
 
 setup(
     name='django_useful_utils',
-    version=VERSION,
+    version='0.0.1',
     python_requires='>=3.8',
     packages=find_packages(),
     install_requires=[],
@@ -18,4 +16,6 @@ setup(
 
         'Programming Language :: Python :: 3.11',
     ],
+    use_scm_version=True,
+    setup_requires=['setuptools_scm'],
 )
