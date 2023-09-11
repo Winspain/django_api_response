@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django_useful_utils"
-version = "0.1.1"
+version = "0.0.1"
 description = ""
 authors = ["winspain <penndicardo@outlook.com>"]
 readme = "README.md"

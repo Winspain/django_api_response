@@ -6,6 +6,8 @@ import time
 from django.conf import settings
 from django.utils.deprecation import MiddlewareMixin
 
+VERSION = f'0.0.1-{time.strftime("%Y%m%d%H%M%S", time.localtime())}'
+
 
 class ApiLoggingMiddleware:
     def __init__(self, get_response):

@@ -1,8 +1,10 @@
 from setuptools import setup, find_packages
 
+from django_useful_utils.api_logging_middleware import VERSION
+
 setup(
     name='django_useful_utils',
-    version='0.1.1',
+    version=VERSION,
     python_requires='>=3.8',
     packages=find_packages(),
     install_requires=[],
