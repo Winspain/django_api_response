@@ -27,3 +27,4 @@ class ApiLoggingMiddleware:
         except Exception as e:
             response_data = e
         logging.info(f'{execute_time}{response_data}')
+        return response
