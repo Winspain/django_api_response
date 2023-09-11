@@ -1,8 +1,9 @@
-from setuptools import setup, find_packages, __version__
+from setuptools import setup, find_packages
+from django_useful_utils.__init__ import __version__
 
 setup(
     name='django_useful_utils',
-    version='0.0.1',
+    version=__version__,
     python_requires='>=3.8',
     packages=find_packages(),
     install_requires=[],
