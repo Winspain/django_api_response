@@ -26,5 +26,8 @@ class ApiLoggingMiddleware:
             response_data = str(response.content, encoding='utf-8') if response.status_code != 500 else 'Please check error log'
         except Exception as e:
             response_data = e
-        logging.info(f'{execute_time}{response_data}')
+        if request.method != 'GET':
+            logging.info(f'{execute_time}ms {request.method} {request.path} {body} {post} {response.status_code} {response.reason_phrase} {response_data}')
+        else:
+            logging.info(f'{execute_time}ms {request.method} {request.path} {response.status_code} {response.reason_phrase} {response_data}')
         return response
