@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django_useful_utils"
-#version = "0.0.0"
+version = "{time:%Y.%m.%d.%H%M%S}"
 description = ""
 authors = ["winspain <penndicardo@outlook.com>"]
 readme = "README.md"
@@ -13,7 +13,6 @@ enable = true       # 代表启用该插件
 #metadata = false      # 生成的版本号不带上其他数据
 #vcs = "git"         # 指定的版本控制系统为git
 #format = "v{base}"  # 指定版本号的生成规则
-version = "{time:%Y.%m.%d.%H%M%S}"
 
 [build-system]
 requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
