@@ -9,9 +9,8 @@ readme = "README.md"
 python = "^3.11"
 
 [tool.poetry-dynamic-versioning]
-enable = true       # 代表启用该插件
-#metadata = false      # 生成的版本号不带上其他数据
-#vcs = "git"         # 指定的版本控制系统为git
+enable = true
+#vcs = "git"
 format = "v{base}+{branch}+{timestamp}}"
 
 [build-system]
